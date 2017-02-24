@@ -11,7 +11,8 @@ RUN apk -U add \
         py-imaging \
         py-pip \
     && rm -rf /var/cache/apk/* \
-    && pip install Scrapy
+    && pip install Scrapy \
+    && pip install scrapy_splash
 
 WORKDIR /runtime/app
 
